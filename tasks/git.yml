@@ -1,0 +1,5 @@
+# ansible task to install git 
+- name: Install git
+  dnf:
+    name: git
+    state: present

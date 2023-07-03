@@ -1,0 +1,6 @@
+# ansible task to update the system
+- name: Update system
+  dnf:
+    name: '*'
+    state: latest
+    update_cache: yes

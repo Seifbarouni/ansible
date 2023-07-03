@@ -1,0 +1,11 @@
+- hosts: localhost
+  connection: local 
+  vars:
+    username: seifbarouni
+  tasks:
+    - import_tasks: tasks/update.yml
+    - import_tasks: tasks/git.yml
+    - import_tasks: tasks/docker.yml
+    - import_tasks: tasks/tmux.yml
+    - import_tasks: tasks/zsh.yml
+    - import_tasks: tasks/brave.yml
